@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation - Nimbus UI</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html">
+              <div class="logo-icon">
+                <span>N</span>
+                <span class="logo-dot"></span>
+              </div>
+              <span class="logo-text">Nimbus UI</span>
+            </a>
+          </div>
+          
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="components.html">Components</a></li>
+              <li class="active"><a href="docs.html">Documentation</a></li>
+            </ul>
+          </nav>
+          
+          <div class="theme-toggle">
+            <button id="theme-toggle-btn" aria-label="Toggle theme">
+              <i class="fas fa-sun light-icon"></i>
+              <i class="fas fa-moon dark-icon"></i>
+            </button>
+          </div>
+          
+          <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li class="active"><a href="docs.html">Documentation</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="with-sidebar">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <div class="sidebar-section">
+            <h3>Getting Started</h3>
+            <ul>
+              <li><a href="#introduction" class="active">Introduction</a></li>
+              <li><a href="#installation">Installation</a></li>
+              <li><a href="#usage">Usage</a></li>
+            </ul>
+          </div>
+          
+          <div class="sidebar-section">
+            <h3>Guides</h3>
+            <ul>
+              <li><a href="#customization">Customization</a></li>
+              <li><a href="#accessibility">Accessibility</a></li>
+              <li><a href="#browser-support">Browser Support</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      
+      <!-- Content -->
+      <div class="main-content">
+        <div class="container">
+          <div class="back-link">
+            <a href="index.html">
+              <i class="fas fa-arrow-left"></i> Back to home
+            </a>
+          </div>
+          
+          <section class="docs-content">
+            <h1><span class="gradient-text">Documentation</span></h1>
+            
+            <div class="docs-section nimbus-card" id="introduction">
+              <h2>Getting Started</h2>
+              <p>
+                This UI Component Library provides a collection of ready-to-use UI components that you can easily copy and paste into your projects.
+              </p>
+              <p>
+                Each component is designed to be standalone and does not require any external dependencies or npm packages.
+              </p>
+            </div>
+            
+            <div class="docs-section nimbus-card" id="installation">
+              <h2>How to Use</h2>
+              <ol>
+                <li>Browse the component library to find the component you need.</li>
+                <li>Click on a component to view its details, preview, and code.</li>
+                <li>Customize the component using the available options.</li>
+                <li>Copy the HTML code and paste it into your project.</li>
+                <li>Add your own styles or modify the existing ones to match your design.</li>
+              </ol>
+            </div>
+            
+            <div class="docs-section nimbus-card" id="customization">
+              <h2>Customization</h2>
+              <p>
+                All components use CSS classes for styling. You can customize the appearance by modifying these classes.
+              </p>
+              <p>
+                For components with variants, you can select different styles from the customization panel.
+              </p>
+            </div>
+            
+            <div class="docs-section nimbus-card" id="accessibility">
+              <h2>Accessibility</h2>
+              <p>
+                All components are designed with accessibility in mind. They include proper ARIA attributes and follow best practices for keyboard navigation and screen reader support.
+              </p>
+            </div>
+            
+            <div class="docs-section nimbus-card" id="browser-support">
+              <h2>Browser Support</h2>
+              <p>
+                The components are compatible with all modern browsers, including Chrome, Firefox, Safari, and Edge.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Built with HTML, CSS, and vanilla JavaScript.</p>
+          <div class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+            <a href="#">Discord</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Detail - Nimbus UI</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html">
+              <div class="logo-icon">
+                <span>N</span>
+                <span class="logo-dot"></span>
+              </div>
+              <span class="logo-text">Nimbus UI</span>
+            </a>
+          </div>
+          
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="components.html">Components</a></li>
+              <li><a href="docs.html">Documentation</a></li>
+            </ul>
+          </nav>
+          
+          <div class="theme-toggle">
+            <button id="theme-toggle-btn" aria-label="Toggle theme">
+              <i class="fas fa-sun light-icon"></i>
+              <i class="fas fa-moon dark-icon"></i>
+            </button>
+          </div>
+          
+          <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="components.html">Components</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="with-sidebar">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-search">
+          <input type="search" id="sidebar-search-input" placeholder="Search components...">
+          <i class="fas fa-search"></i>
+        </div>
+        
+        <nav class="sidebar-nav">
+          <!-- Sidebar content would be dynamically generated here -->
+          <!-- This is the same as in components.html -->
+        </nav>
+      </aside>
+      
+      <!-- Content -->
+      <div class="main-content">
+        <div class="container">
+          <div class="back-link">
+            <a href="components.html">
+              <i class="fas fa-arrow-left"></i> Back to components
+            </a>
+          </div>
+          
+          <section class="component-detail" id="component-detail-content">
+            <!-- Component detail content will be dynamically loaded here -->
+            <!-- Example structure: -->
+            <div class="component-detail-header">
+              <h1><span class="gradient-text">Button</span></h1>
+              <p>A button component with different variants and sizes.</p>
+              <div class="component-tags">
+                <span class="tag">Interactive</span>
+                <span class="tag">Form</span>
+                <span class="tag">Action</span>
+              </div>
+            </div>
+            
+            <div class="component-detail-content">
+              <div class="component-preview-tabs">
+                <div class="tabs-list">
+                  <button class="tab-btn active" data-tab="preview">Preview</button>
+                  <button class="tab-btn" data-tab="code">Code</button>
+                </div>
+                
+                <div class="tabs-content">
+                  <div class="tab-panel active" data-tab="preview">
+                    <div class="component-preview-container">
+                      <button class="nimbus-button">Click me</button>
+                    </div>
+                  </div>
+                  
+                  <div class="tab-panel" data-tab="code">
+                    <div class="code-container">
+                      <pre><code class="language-html">&lt;button class="nimbus-button"&gt;Click me&lt;/button&gt;</code></pre>
+                      <button class="copy-code-btn">
+                        <i class="fas fa-copy"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="component-customization nimbus-card">
+                <h3>Customization</h3>
+                
+                <div class="customization-options">
+                  <div class="customization-section">
+                    <h4>Variants</h4>
+                    <div class="variant-buttons">
+                      <button class="nimbus-button small active" data-variant="default">Default</button>
+                      <button class="nimbus-button small" data-variant="outline">Outline</button>
+                      <button class="nimbus-button small" data-variant="destructive">Destructive</button>
+                      <button class="nimbus-button small" data-variant="ghost">Ghost</button>
+                    </div>
+                  </div>
+                  
+                  <div class="customization-section">
+                    <h4>Usage</h4>
+                    <p>Copy the HTML code and paste it into your project. Customize the classes to match your design system.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Built with HTML, CSS, and vanilla JavaScript.</p>
+          <div class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+            <a href="#">Discord</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="js/prism.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/component-detail.js"></script>
+</body>
+</html>
+
+

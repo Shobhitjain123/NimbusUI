@@ -1,0 +1,110 @@
+/* Base Styles */
+
+:root{
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+
+  --primary: 222 47% 31%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222 47% 11%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222 47% 11%;
+
+  --radius: 0.75rem;
+
+  /* Nimbus UI Theme Colors */
+  --nimbus-gradient-start: 210 100% 97%;
+  --nimbus-gradient-end: 220 100% 95%;
+  --nimbus-accent: 222 83% 55%;
+  --nimbus-accent-light: 222 83% 65%;
+  --nimbus-accent-dark: 222 83% 45%;
+
+  /* Font */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+}
+
+.dark{
+.dark {
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+
+  --primary: 210 40% 98%;
+  --primary-foreground: 222 47% 11%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+
+  /* Nimbus UI Theme Colors - Dark */
+  --nimbus-gradient-start: 222 47% 13%;
+  --nimbus-gradient-end: 222 47% 9%;
+  --nimbus-accent: 222 83% 65%;
+  --nimbus-accent-light: 222 83% 75%;
+  --nimbus-accent-dark: 222 83% 55%;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
