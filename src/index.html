@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nimbus UI - Beautiful UI Components</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html">
+              <div class="logo-icon">
+                <span>N</span>
+                <span class="logo-dot"></span>
+              </div>
+              <span class="logo-text">Nimbus UI</span>
+            </a>
+          </div>
+          
+          <nav class="main-nav">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="components.html">Components</a></li>
+              <li><a href="docs.html">Documentation</a></li>
+            </ul>
+          </nav>
+          
+          <div class="theme-toggle">
+            <button id="theme-toggle-btn" aria-label="Toggle theme">
+              <i class="fas fa-sun light-icon"></i>
+              <i class="fas fa-moon dark-icon"></i>
+            </button>
+          </div>
+          
+          <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section nimbus-gradient">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in">
+              <h1>Beautiful UI Components <span class="gradient-text">Ready to Use</span></h1>
+              <p>Browse, preview, customize, and copy-paste UI components without any frameworks or npm packages.</p>
+              <div class="hero-buttons animate-fade-in-delay-1">
+                <a href="components.html" class="btn btn-primary">
+                  Browse Components <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="docs.html" class="btn btn-outline">Documentation</a>
+              </div>
+            </div>
+            
+            <div class="hero-preview animate-fade-in-delay-2">
+              <div class="code-editor nimbus-card">
+                <div class="code-editor-header">
+                  <div class="editor-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="editor-filename">component-preview.html</div>
+                </div>
+                <div class="code-editor-content">
+                  <div class="code-line animate-pulse-slow"></div>
+                  <div class="code-line animate-pulse-slow"></div>
+                  <div class="code-line animate-pulse-slow"></div>
+                  <div class="code-block animate-pulse-slow"></div>
+                  <div class="code-buttons">
+                    <div class="code-button primary"></div>
+                    <div class="code-button secondary"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="floating-element elem-1 animate-float-slow"></div>
+        <div class="floating-element elem-2 animate-float"></div>
+        <div class="floating-element elem-3 animate-float-fast"></div>
+        <div class="floating-element elem-4 animate-float-slow"></div>
+      </section>
+      
+      <!-- Features Section -->
+      <section class="features-section">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <h2><span class="gradient-text">Powerful Features</span></h2>
+            <p>Everything you need to build beautiful interfaces</p>
+          </div>
+          
+          <div class="features-grid">
+            <div class="feature-card nimbus-card animate-on-scroll" data-delay="0">
+              <div class="feature-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Copy & Paste</h3>
+              <p>Simply copy the HTML code and paste it into your project. No dependencies required.</p>
+            </div>
+            
+            <div class="feature-card nimbus-card animate-on-scroll" data-delay="100">
+              <div class="feature-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3>Customizable</h3>
+              <p>Easily customize the components to match your design system with simple CSS classes.</p>
+            </div>
+            
+            <div class="feature-card nimbus-card animate-on-scroll" data-delay="200">
+              <div class="feature-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3>Fast & Lightweight</h3>
+              <p>Optimized for performance with minimal overhead. Just the code you need.</p>
+            </div>
+            
+            <div class="feature-card nimbus-card animate-on-scroll" data-delay="300">
+              <div class="feature-icon">
+                <i class="fas fa-copy"></i>
+              </div>
+              <h3>Multiple Variants</h3>
+              <p>Each component comes with multiple variants to suit different design needs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Component Showcase Section -->
+      <section class="showcase-section">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <h2>Component <span class="gradient-text">Showcase</span></h2>
+            <p>Explore our collection of beautiful UI components</p>
+          </div>
+          
+          <div class="tabs animate-on-scroll">
+            <div class="tabs-list">
+              <button class="tab-btn active" data-category="inputs">Inputs & Forms</button>
+              <button class="tab-btn" data-category="display">Display</button>
+              <button class="tab-btn" data-category="feedback">Feedback & Status</button>
+              <button class="tab-btn" data-category="navigation">Navigation</button>
+              <button class="tab-btn" data-category="layout">Layout</button>
+            </div>
+            
+            <div class="tabs-content">
+              <div class="tab-panel active" data-category="inputs">
+                <div class="components-grid">
+                  <!-- Button Component Card -->
+                  <div class="component-card nimbus-card animate-on-scroll" data-delay="0">
+                    <div class="component-header">
+                      <h3>Button</h3>
+                    </div>
+                    <div class="component-preview">
+                      <button class="nimbus-button">Click me</button>
+                    </div>
+                    <div class="component-description">
+                      <p>A button component with different variants and sizes.</p>
+                    </div>
+                    <div class="component-tags">
+                      <span class="tag">Interactive</span>
+                      <span class="tag">Form</span>
+                      <span class="tag">Action</span>
+                    </div>
+                  </div>
+                  
+                  <!-- Input Component Card -->
+                  <div class="component-card nimbus-card animate-on-scroll" data-delay="100">
+                    <div class="component-header">
+                      <h3>Input</h3>
+                    </div>
+                    <div class="component-preview">
+                      <input type="text" class="nimbus-input" placeholder="Enter text here...">
+                    </div>
+                    <div class="component-description">
+                      <p>An input component for collecting user data.</p>
+                    </div>
+                    <div class="component-tags">
+                      <span class="tag">Form</span>
+                      <span class="tag">Data Entry</span>
+                    </div>
+                  </div>
+                  
+                  <!-- Checkbox Component Card -->
+                  <div class="component-card nimbus-card animate-on-scroll" data-delay="200">
+                    <div class="component-header">
+                      <h3>Checkbox</h3>
+                    </div>
+                    <div class="component-preview">
+                      <div class="checkbox-wrapper">
+                        <input type="checkbox" id="demo-checkbox" class="nimbus-checkbox">
+                        <label for="demo-checkbox">Accept terms and conditions</label>
+                      </div>
+                    </div>
+                    <div class="component-description">
+                      <p>A checkbox component for selecting multiple options.</p>
+                    </div>
+                    <div class="component-tags">
+                      <span class="tag">Form</span>
+                      <span class="tag">Selection</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Other tab panels would be here -->
+              <div class="tab-panel" data-category="display">
+                <!-- Display components would go here -->
+              </div>
+              
+              <div class="tab-panel" data-category="feedback">
+                <!-- Feedback components would go here -->
+              </div>
+              
+              <div class="tab-panel" data-category="navigation">
+                <!-- Navigation components would go here -->
+              </div>
+              
+              <div class="tab-panel" data-category="layout">
+                <!-- Layout components would go here -->
+              </div>
+            </div>
+          </div>
+          
+          <div class="showcase-cta animate-on-scroll">
+            <a href="components.html" class="btn btn-primary">
+              View All Components <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- CTA Section -->
+      <section class="cta-section nimbus-gradient">
+        <div class="container">
+          <div class="cta-content animate-on-scroll">
+            <h2>Start Building <span class="gradient-text">Beautiful UIs</span> Today</h2>
+            <p>Browse our collection of components and start building your next project.</p>
+            <div class="cta-buttons animate-on-scroll" data-delay="200">
+              <a href="components.html" class="btn btn-primary">
+                Get Started <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="docs.html" class="btn btn-outline">Learn More</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="floating-element elem-1 animate-float-slow"></div>
+        <div class="floating-element elem-2 animate-float"></div>
+        <div class="floating-element elem-3 animate-float-fast"></div>
+        <div class="floating-element elem-4 animate-float-slow"></div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Built with HTML, CSS, and vanilla JavaScript.</p>
+          <div class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+            <a href="#">Discord</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+

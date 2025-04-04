@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components - Nimbus UI</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html">
+              <div class="logo-icon">
+                <span>N</span>
+                <span class="logo-dot"></span>
+              </div>
+              <span class="logo-text">Nimbus UI</span>
+            </a>
+          </div>
+          
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="components.html">Components</a></li>
+              <li><a href="docs.html">Documentation</a></li>
+            </ul>
+          </nav>
+          
+          <div class="search-box">
+            <input type="search" id="component-search" placeholder="Search components...">
+            <i class="fas fa-search"></i>
+          </div>
+          
+          <div class="theme-toggle">
+            <button id="theme-toggle-btn" aria-label="Toggle theme">
+              <i class="fas fa-sun light-icon"></i>
+              <i class="fas fa-moon dark-icon"></i>
+            </button>
+          </div>
+          
+          <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="components.html">Components</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="with-sidebar">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-search">
+          <input type="search" id="sidebar-search-input" placeholder="Search components...">
+          <i class="fas fa-search"></i>
+        </div>
+        
+        <nav class="sidebar-nav">
+          <div class="sidebar-section">
+            <h3>All Components</h3>
+            <ul>
+              <li><a href="#" class="active">Browse All</a></li>
+            </ul>
+          </div>
+          
+          <div class="sidebar-section">
+            <h3>Inputs & Forms</h3>
+            <ul>
+              <li><a href="component-detail.html?id=button">Button</a></li>
+              <li><a href="component-detail.html?id=input">Input</a></li>
+              <li><a href="component-detail.html?id=checkbox">Checkbox</a></li>
+              <li><a href="component-detail.html?id=radio-group">Radio Group</a></li>
+              <li><a href="component-detail.html?id=select">Select</a></li>
+            </ul>
+          </div>
+          
+          <div class="sidebar-section">
+            <h3>Display</h3>
+            <ul>
+              <li><a href="component-detail.html?id=card">Card</a></li>
+              <li><a href="component-detail.html?id=badge">Badge</a></li>
+              <li><a href="component-detail.html?id=avatar">Avatar</a></li>
+              <li><a href="component-detail.html?id=tooltip">Tooltip</a></li>
+              <li><a href="component-detail.html?id=progress">Progress</a></li>
+            </ul>
+          </div>
+          
+          <div class="sidebar-section">
+            <h3>Feedback & Status</h3>
+            <ul>
+              <li><a href="component-detail.html?id=alert">Alert</a></li>
+              <li><a href="component-detail.html?id=switch">Switch</a></li>
+              <li><a href="component-detail.html?id=slider">Slider</a></li>
+              <li><a href="component-detail.html?id=alert-destructive">Alert Destructive</a></li>
+              <li><a href="component-detail.html?id=notification">Notification</a></li>
+            </ul>
+          </div>
+          
+          <div class="sidebar-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="component-detail.html?id=tabs">Tabs</a></li>
+              <li><a href="component-detail.html?id=breadcrumb">Breadcrumb</a></li>
+              <li><a href="component-detail.html?id=pagination">Pagination</a></li>
+              <li><a href="component-detail.html?id=dropdown-menu">Dropdown Menu</a></li>
+              <li><a href="component-detail.html?id=calendar-nav">Calendar Navigation</a></li>
+            </ul>
+          </div>
+          
+          <div class="sidebar-section">
+            <h3>Layout</h3>
+            <ul>
+              <li><a href="component-detail.html?id=separator">Separator</a></li>
+              <li><a href="component-detail.html?id=grid-layout">Grid Layout</a></li>
+              <li><a href="component-detail.html?id=flex-layout">Flex Layout</a></li>
+              <li><a href="component-detail.html?id=container">Container</a></li>
+              <li><a href="component-detail.html?id=aspect-ratio">Aspect Ratio</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      
+      <!-- Content -->
+      <div class="main-content">
+        <div class="container">
+          <section class="page-header">
+            <h1><span class="gradient-text">UI Components</span></h1>
+            <p>Browse, preview, customize, and copy-paste UI components without any frameworks or npm packages.</p>
+          </section>
+          
+          <section class="components-section">
+            <div class="tabs">
+              <div class="tabs-list">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="inputs">Inputs & Forms</button>
+                <button class="tab-btn" data-category="display">Display</button>
+                <button class="tab-btn" data-category="feedback">Feedback & Status</button>
+                <button class="tab-btn" data-category="navigation">Navigation</button>
+                <button class="tab-btn" data-category="layout">Layout</button>
+              </div>
+              
+              <div class="tabs-content">
+                <div class="tab-panel active" data-category="all">
+                  <div class="components-grid">
+                    <!-- Component cards would be dynamically generated here -->
+                    <!-- Example of a component card -->
+                    <a href="component-detail.html?id=button" class="component-card nimbus-card">
+                      <div class="component-header">
+                        <h3>Button</h3>
+                      </div>
+                      <div class="component-preview">
+                        <button class="nimbus-button">Click me</button>
+                      </div>
+                      <div class="component-description">
+                        <p>A button component with different variants and sizes.</p>
+                      </div>
+                      <div class="component-tags">
+                        <span class="tag">Interactive</span>
+                        <span class="tag">Form</span>
+                        <span class="tag">Action</span>
+                      </div>
+                    </a>
+                    
+                    <a href="component-detail.html?id=input" class="component-card nimbus-card">
+                      <div class="component-header">
+                        <h3>Input</h3>
+                      </div>
+                      <div class="component-preview">
+                        <input type="text" class="nimbus-input" placeholder="Enter text here...">
+                      </div>
+                      <div class="component-description">
+                        <p>An input component for collecting user data.</p>
+                      </div>
+                      <div class="component-tags">
+                        <span class="tag">Form</span>
+                        <span class="tag">Data Entry</span>
+                      </div>
+                    </a>
+                    
+                    <a href="component-detail.html?id=card" class="component-card nimbus-card">
+                      <div class="component-header">
+                        <h3>Card</h3>
+                      </div>
+                      <div class="component-preview">
+                        <div class="preview-card">
+                          <div class="preview-card-header">Card Title</div>
+                          <div class="preview-card-content">Card content goes here.</div>
+                          <div class="preview-card-footer">
+                            <button class="nimbus-button small">Action</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="component-description">
+                        <p>A card component for displaying content in a container.</p>
+                      </div>
+                      <div class="component-tags">
+                        <span class="tag">Layout</span>
+                        <span class="tag">Container</span>
+                      </div>
+                    </a>
+                    
+                    <!-- More component cards would be here -->
+                  </div>
+                </div>
+                
+                <!-- Other tab panels would be here -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Built with HTML, CSS, and vanilla JavaScript.</p>
+          <div class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+            <a href="#">Discord</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>
+
+
