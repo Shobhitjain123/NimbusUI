@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/nimbusUI/src/output.css">
+    <title>Document</title>
+</head>
+<body class="p-5">
+    <div>
+        <h1>Color Gradient Loaders</h1>
+        <div class="flex gap-20">
+            <div style="background: conic-gradient(white, yellow);" class="loader h-24 w-24 rounded-full flex justify-center items-center animate-spin">
+                <div class="inner-circle">
+                </div>
+            </div>
+            <div style="background: conic-gradient(white, #6366f1);" class="loader h-24 w-24 rounded-full flex justify-center items-center animate-spin">
+                <div class="inner-circle">
+                </div>
+            </div>
+            <div style="background: conic-gradient(white, #a1a1aa);" class="loader h-24 w-24 rounded-full flex justify-center items-center animate-spin">
+                <div class="inner-circle">
+                </div>
+            </div>
+            <div style="background: conic-gradient(white, #4ade80);" class="loader h-24 w-24 rounded-full flex justify-center items-center animate-spin">
+                <div class="inner-circle">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Continuous color loaders with sizes</h1>
+        <div class="flex items-center space-x-4">
+            <div class="w-2 h-2 border-2 border-t-transparent border-gray-500 rounded-full animate-spin"></div> 
+            <div class="w-4 h-4 border-2 border-t-transparent border-gray-500 rounded-full animate-spin"></div>
+            <div class="w-6 h-6 border-2 border-t-transparent border-blue-500 rounded-full animate-spin"></div> 
+            <div class="w-8 h-8 border-4 border-t-transparent border-green-500 rounded-full animate-spin"></div> 
+        </div>
+    </div>
+
+    <div>
+        <h1>Bouncing dots</h1>
+        <div class="flex space-x-1">
+            <div class="w-1.5 h-1.5 bg-gray-500 rounded-full animate-bounce [animation-delay:-0.10s]"></div>
+            <div class="w-1.5 h-1.5 bg-gray-500 rounded-full animate-bounce [animation-delay:-0.30s]"></div>
+            <div class="w-1.5 h-1.5 bg-gray-500 rounded-full animate-bounce"></div>
+          </div>
+    </div>
+
+</body>
+</html>

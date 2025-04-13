@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.active{
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  /* .loader {
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: conic-gradient(
+        white,
+        yellow
+    );
+    animation: spin 1s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  .inner-circle {
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
