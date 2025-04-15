@@ -1,0 +1,38 @@
+<!-- Menu 1: Mega Menu (Click Toggle) -->
+<nav class="menu-1 relative bg-gray-900 text-white px-8 py-4 flex justify-between items-center mb-10">
+    <div class="text-2xl font-bold">MySite</div>
+    <ul class="flex gap-8 items-center">
+        <li class="relative">
+            <button id="menuToggle" class="hover:text-blue-400">Products</button>
+            <div id="megaMenu"
+                class="mega-menu absolute left-0 top-full mt-2 bg-white text-gray-800 shadow-2xl p-6 rounded-xl w-[600px] z-50 transition-all duration-300 hidden">
+                <div class="grid grid-cols-3 gap-6 w-full">
+                    <div>
+                        <h4 class="font-bold mb-2">Category 1</h4>
+                        <ul class="space-y-1">
+                            <li><a href="#" class="hover:text-blue-600">Item A</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Item B</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Item C</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2">Category 2</h4>
+                        <ul class="space-y-1">
+                            <li><a href="#" class="hover:text-blue-600">Item D</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Item E</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Item F</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-100 p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold mb-2">Featured</h4>
+                        <p class="text-sm text-gray-700">Check out our latest updates and offers!</p>
+                        <a href="#" class="mt-2 inline-block text-blue-600 font-semibold hover:underline">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="#" class="hover:text-blue-400">About</a></li>
+        <li><a href="#" class="hover:text-blue-400">Contact</a></li>
+    </ul>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>

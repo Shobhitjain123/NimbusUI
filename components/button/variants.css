@@ -1,0 +1,32 @@
+/* Primary */
+
+  /* Secondary */
+  .ui-button.secondary {
+    background-color: #f59e0b;
+    color: white;
+  }
+  
+  .ui-button.secondary:hover:not(:disabled) {
+    background-color: #d97706;
+  }
+  
+  .ui-button.secondary:active:not(:disabled) {
+    background-color: #b45309;
+  }
+  
+  /* Outline */
+  .ui-button.outline {
+    background-color: transparent;
+    border-color: #6366f1;
+    color: #6366f1;
+  }
+  
+  .ui-button.outline:hover:not(:disabled) {
+    background-color: rgba(99, 102, 241, 0.1);
+  }
+  
+  .ui-button.outline:active:not(:disabled) {
+    background-color: rgba(99, 102, 241, 0.2);
+  }
+  
+  /* Ghost */
