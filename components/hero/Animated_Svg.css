@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.svg-hero {
+    height: 100vh;
+    width: 100%;
+    background-color: #0f172a;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+.svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.animated-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4 {
+    fill: none;
+    stroke-width: 2;
+    opacity: 0.3;
+    transform-origin: center;
+}
+
+.circle-1 {
+    stroke: #38bdf8;
+    animation: pulse 4s ease-in-out infinite, rotate 10s linear infinite;
+}
+
+.circle-2 {
+    stroke: #60a5fa;
+    animation: pulse 4s ease-in-out infinite 1s, rotate 15s linear infinite reverse;
+}
+
+.circle-3 {
+    stroke: #818cf8;
+    animation: pulse 4s ease-in-out infinite 2s, rotate 20s linear infinite;
+}
+
+.circle-4 {
+    stroke: #a78bfa;
+    animation: pulse 4s ease-in-out infinite 3s, rotate 25s linear infinite reverse;
+}
+
+.wave,
+.wave-2,
+.wave-3 {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.wave {
+    stroke: #38bdf8;
+    animation: wave 10s ease-in-out infinite;
+}
+
+.wave-2 {
+    stroke: #818cf8;
+    animation: wave 10s ease-in-out infinite 1s;
+}
+
+.wave-3 {
+    stroke: #a78bfa;
+    animation: wave 10s ease-in-out infinite 2s;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        stroke-width: 2;
+        opacity: 0.3;
+    }
+
+    50% {
+        stroke-width: 4;
+        opacity: 0.6;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        d: path('M0,300 Q200,250 400,300 Q600,350 800,300');
+    }
+
+    50% {
+        d: path('M0,300 Q200,350 400,300 Q600,250 800,300');
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,22 @@
+<!-- Menu 3: Full-Screen Overlay -->
+<section class="menu-3 mb-20 text-center">
+    <h2 class="text-2xl font-semibold mb-6">Full-Screen Overlay</h2>
+    <button id="openOverlayBtn"
+        class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">Open Overlay</button>
+
+    <!-- Overlay -->
+    <div id="fullOverlay"
+        class="overlay hidden fixed inset-0 bg-black bg-opacity-90 text-white flex flex-col items-center justify-center z-50">
+        <button id="closeOverlayBtn"
+            class="absolute top-6 right-8 text-4xl font-bold text-white hover:text-purple-400">&times;</button>
+        <input id="searchInput" type="text"
+            class="search-input w-72 p-3 rounded-lg mb-8 text-black text-lg outline-none" placeholder="Search...">
+        <div class="links space-y-4 text-2xl">
+            <a href="#" class="hover:text-purple-400 block">Home</a>
+            <a href="#" class="hover:text-purple-400 block">About</a>
+            <a href="#" class="hover:text-purple-400 block">Services</a>
+            <a href="#" class="hover:text-purple-400 block">Contact</a>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>

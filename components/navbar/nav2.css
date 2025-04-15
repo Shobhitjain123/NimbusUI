@@ -1,0 +1,13 @@
+/*Menu 3: Full-Screen Overlay */
+.overlay {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+    transform: scale(0.98);
+    pointer-events: none;
+  }
+  .overlay.visible {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+  }
+  

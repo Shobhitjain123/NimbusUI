@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components - Nimmbus UI</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="./components/button/ghost.css">
+  <link rel="stylesheet" href="./components/button/outline.css">
+  <link rel="stylesheet" href="./components/button/primary.css">
+  <link rel="stylesheet" href="./components/button/secondary.css">
+</head>
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>Nimbus UI</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="components.html" class="active">Components</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Components Page Layout -->
+    <div class="components-layout">
+      <!-- Sidebar -->
+      <aside class="components-sidebar">
+        <div class="sidebar-header">
+          <h2>Components</h2>
+        </div>
+        <div class="sidebar-nav">
+          <div class="sidebar-category">
+            <h3>Basic</h3>
+            <ul>
+              <li><a href="#" class="sidebar-item active" data-component="button">Buttons</a></li>
+              <li><a href="#" class="sidebar-item " data-component="hero">Hero</a></li>
+              <li><a href="#" class="sidebar-item" data-component="card">Cards</a></li>
+              <li><a href="#" class="sidebar-item" data-component="input">Inputs</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-category">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="#" class="sidebar-item" data-component="navbar">Navbar</a></li>
+              <!-- <li><a href="#" class="sidebar-item" data-component="accordian">Accordian</a></li> -->
+            </ul>
+          </div>
+          <div class="sidebar-category">
+            <h3>Feedback</h3>
+            <ul>
+              <li><a href="#" class="sidebar-item" data-component="extra">Extra</a></li>
+              <!-- <li><a href="#" class="sidebar-item" data-component="toast">Toasts</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="components-main">
+        <div class="component-view">
+          <!-- Component Preview -->
+          <div class="component-preview">
+            <div class="preview-header">
+              <h2>Button Component</h2>
+            </div>
+            <div class="preview-container">
+
+            </div>
+          </div>
+          <div id="preview"></div>
+
+          <!-- Component Code -->
+          <div class="component-code">
+            <div class="code-tabs">
+              <button class="code-tab active" data-tab="html">HTML</button>
+              <button class="code-tab" data-tab="css">CSS</button>
+              <button class="code-tab" data-tab="js">JavaScript</button>
+            </div>
+            <div class="code-content">
+              <div class="code-panel active" id="html-panel">
+                <div class="code-actions">
+                  <button class="copy-btn" data-target="html-code">Copy</button>
+                </div>
+                <pre><code class="language-html" id="html-code"></code></pre>
+              </div>
+              <div class="code-panel" id="css-panel">
+                <div class="code-actions">
+                  <button class="copy-btn" data-target="css-code">Copy</button>
+                </div>
+                <pre><code class="language-css" id="css-code"></code></pre>
+              </div>
+              <div class="code-panel" id="js-panel">
+                <div class="code-actions">
+                  <button class="copy-btn" data-target="js-code">Copy</button>
+                </div>
+                <pre><code class="language-javascript" id="js-code"></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Made with ❤️ and passion by the Nimbus UI team</p>
+          <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Discord</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+</body>
+
+</html>

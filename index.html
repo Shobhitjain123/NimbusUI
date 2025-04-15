@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComponentUI - Lightweight UI Components</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+</head>
+
+<body id="main">
+  <button id="theme-toggle" class="theme-toggle">
+    <span id="sun-icon" style="display: none;">🌞</span>
+    <span id="moon-icon">🌙</span>
+  </button>
+  <div id="theme-transition"></div>
+
+  <div class="site-wrapper">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>Nimbus UI</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="components.html">Components</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container particle-js">
+        <div class="hero-content">
+          <h1>Beautiful UI Components</h1>
+          <p>Lightweight, accessible, and easy to copy-paste into your projects.</p>
+          <div class="hero-buttons">
+            <a href="components.html" class="btn btn-primary">Explore Components</a>
+            <a href="docs.html" class="btn btn-outline">Read Docs</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+    <div class="line"></div>
+    <!-- Components Preview Section -->
+    <section class="components-preview">
+      <div class="container">
+        <div class="component-nav">
+          <button class="component-nav-item active" data-target="buttons">Buttons</button>
+          <button class="component-nav-item" data-target="cards">Cards</button>
+          <button class="component-nav-item" data-target="sliders">Sliders</button>
+          <button class="component-nav-item" data-target="forms">Forms</button>
+        </div>
+        <!-- <div class="component-showcase">
+          <div class="component-group active" id="buttons">
+            <div class="component-item">
+              <button class="demo-btn primary">Primary Button</button>
+              <p>Primary Button</p>
+            </div>
+            <div class="component-item">
+              <button class="demo-btn secondary">Secondary Button</button>
+              <p>Secondary Button</p>
+            </div>
+            <div class="component-item">
+              <button class="demo-btn outline">Outline Button</button>
+              <p>Outline Button</p>
+            </div>
+          </div>
+          <div class="component-group" id="cards">
+            <div class="component-item">
+              <div class="demo-card">
+                <div class="card-header">
+                  <h3>Card Title</h3>
+                </div>
+                <div class="card-body">
+                  <p>This is a simple card component with a header and body.</p>
+                </div>
+                <div class="card-footer">
+                  <button class="demo-btn small">Learn More</button>
+                </div>
+              </div>
+              <p>Basic Card</p>
+            </div>
+            <div class="component-item">
+              <div class="demo-card horizontal">
+                <div class="card-image"></div>
+                <div class="card-content">
+                  <h3>Horizontal Card</h3>
+                  <p>A card with horizontal layout.</p>
+                </div>
+              </div>
+              <p>Horizontal Card</p>
+            </div>
+          </div>
+          <div class="component-group" id="sliders">
+            <div class="component-item">
+              <input type="range" class="demo-slider" min="0" max="100" value="50">
+              <p>Basic Slider</p>
+            </div>
+          </div>
+          <div class="component-group" id="forms">
+            <div class="component-item">
+              <div class="demo-input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+              </div>
+              <p>Input Field</p>
+            </div>
+          </div>
+        </div> -->
+        <div class="view-all">
+          <a href="components.html" class="btn btn-primary">View All Components</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Made with ❤️ and passion by the NimbusUI team</p>
+          <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Discord</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
