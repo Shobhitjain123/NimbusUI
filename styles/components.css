@@ -13,7 +13,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
   line-height: 1.5;
-  background: linear-gradient(-45deg, var(--text-color), #23a6d5, #23d5ab);
+  background: var(--primary-color);
 }
 
 
@@ -61,7 +61,7 @@ body {
 .components-sidebar {
   width: 280px;
   background-color: transparent;
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   border-top: none;
   padding: 1.5rem;
   overflow-y: auto;
@@ -115,7 +115,7 @@ body {
 
 /* Main Content */
 .components-main {
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   border-top: none;
   border-left: none;
   border-bottom: none;
@@ -339,4 +339,8 @@ code {
 
 .iframe-preview.extra {
   height: 40vh;
+}
+
+.preview-container:nth-child(n){
+  margin: 30px;
 }

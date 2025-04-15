@@ -2,12 +2,13 @@
 :root {
   --primary-color: #000000;
   --primary-hover: #1a1a1a;
-  --secondary-color: #ffffff;
-  --text-color: #d2f148;
-  --text-light: #4b5563;
+  --secondary-color: hsl(0, 0%, 100%);
+  --text-color: #fff;
+  --text-dark: #000;
+  --text-light: #fff;
   --bg-color: #ffffff;
   --bg-light: #f1f5f9;
-  --border-color: #e5e7eb;
+  --border-color: #000;
   --border-radius: 0.5rem;
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -17,14 +18,15 @@
 }
 
 .dark {
-  --primary-color: #cccccc;
+  --primary-color: #fcf0cd;
   --primary-hover: #fff;
-  --secondary-color: #000000;
-  --text-color: #000000;
-  --text-light: #94a3b8;
-  --bg-color: #ffffff;
+  --secondary-color: hsl(0, 0%, 100%);
+  --text-color: #000;
+  --text-light: #000;
+  --text-dark: #fff;
+  --bg-color: #000;
   --bg-light: #0a0a0a;
-  --border-color: #1e293b;
+  --border-color: #000;
   --border-radius: 0.5rem;
   --shadow-sm: 0 0 4px rgba(255, 255, 255, 0.1);
   --shadow-md: 0 0 8px rgba(255, 255, 255, 0.2);
@@ -44,7 +46,7 @@
 
 
 body.dark {
-  background: linear-gradient(-45deg, var(--text-color), #107da4, #326771);
+  background: var(--primary-color);
   background-size: 400% 400%;
   color: var(--text-color) !important;
 }
@@ -54,7 +56,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
   line-height: 1.5;
-  background: linear-gradient(-45deg, var(--text-color), #23a6d5, #23d5ab);
+  background: var(--primary-color);
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
 }
@@ -139,7 +141,7 @@ img {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: var(--text-light);
   border: none;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 20px;
 }
@@ -179,7 +181,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0 1.5rem;
 
@@ -188,7 +190,8 @@ img {
 
 
 .navbar {
-  border: 1px solid var(--secondary-color);
+  /* border: 1px solid var(--secondary-color); */
+  border-radius: 4rem;
   box-shadow: inset 0 -1px 0px var(--secondary-color);
   position: absolute;
   margin: 0 auto;
@@ -235,6 +238,7 @@ img {
 
 
 .nav-links {
+  font-size: 1.23rem;
   display: flex;
   gap: 2rem;
 }
@@ -273,12 +277,12 @@ img {
 
 /* Hero Section */
 .hero {
-  border: 1px solid var(--secondary-color);
-  border-top: none;
-  border-bottom: none;
+  /* border-bottom: 1px solid var(--secondary-color); */
+  /* border-top: none;
+  border-bottom: none; */
   position: relative;
   overflow: hidden;
-  height: 50vh;
+  height: 90vh;
   display: flex;
 }
 
@@ -395,16 +399,16 @@ img {
   /* box-shadow: -200px 0 0 0 var(--primary-color), */
   /* 200px 0 0 0 var(--primary-color); */
   /* right solid shadow */
+  height: 60vh;
   background-color: transparent;
-  padding: 1rem 0 6rem 0;
-  border: 1px solid var(--secondary-color);
-  border-bottom: none;
+  /* border-top: 1px solid var(--secondary-color); */
+  padding: 2rem 0 6rem 0;
 }
 
 .component-nav {
   color: var(--text-color);
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 1rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
@@ -415,7 +419,7 @@ img {
   padding: 0.5rem 1.5rem;
   border-radius: var(--border-radius);
   background-color: transparent;
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   cursor: pointer;
   transition: var(--transition);
   font-weight: 500;
@@ -429,6 +433,13 @@ img {
 
 .component-nav-item:hover,
 .component-nav-item.active {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  border-color: var(--secondary-color);
+}
+
+.dark .component-nav-item:hover,
+.dark .component-nav-item.active {
   background-color: var(--secondary-color);
   color: var(--text-light);
   border-color: var(--secondary-color);
@@ -454,11 +465,12 @@ img {
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
 }
 
 .component-item:hover {
@@ -494,7 +506,7 @@ img {
 
 .demo-btn.secondary {
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--text-dark);
 }
 
 .demo-btn.outline {
@@ -513,7 +525,7 @@ img {
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
 }
 
 .card-header {
@@ -539,7 +551,7 @@ img {
 
 .card-image {
   width: 120px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .card-content {
@@ -600,7 +612,7 @@ img {
   padding: 3rem 0;
   background-color: transparent;
   border-top: 1px solid var(--border-color);
-  border: 1px solid var(--secondary-color);
+  /* border: 1px solid var(--secondary-color); */
 }
 
 .footer-content {
@@ -767,4 +779,61 @@ img {
   .component-group {
     grid-template-columns: 1fr;
   }
+}
+
+/* Timeline 9: Stepper */
+.timeline-9 .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.timeline-9 .step:hover .circle {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+}
+
+.timeline-9 .circle {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border: 2px solid #3b82f6;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.timeline-9 .step p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.timeline-9 .progress-line {
+  top: 1.75rem;
+  height: 4px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  z-index: 0;
+}
+
+.timeline-9 .progress-bar {
+  height: 100%;
+  background-color: #3b82f6;
+  border-radius: 9999px;
+  width: 0%;
+}
+
+.slider1 {
+  width: 50vw;
 }
