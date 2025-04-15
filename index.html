@@ -24,7 +24,7 @@
     <nav class="navbar">
       <div class="container">
         <div class="logo">
-          <h1>Nimbus UI</h1>
+          <h1><span style='font-size: 2rem;'>N</span>imbus <span style='font-size: 2rem;'>UI</span></h1>
         </div>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
@@ -62,26 +62,27 @@
       <div class="container">
         <div class="component-nav">
           <button class="component-nav-item active" data-target="buttons">Buttons</button>
-          <button class="component-nav-item" data-target="cards">Cards</button>
-          <button class="component-nav-item" data-target="sliders">Sliders</button>
-          <button class="component-nav-item" data-target="forms">Forms</button>
+          <!-- <button class="component-nav-item" data-target="cards">Cards</button> -->
+          <!-- <button class="component-nav-item" data-target="sliders">Sliders</button> -->
+          <!-- <button class="component-nav-item" data-target="forms">Forms</button> -->
         </div>
-        <!-- <div class="component-showcase">
+        <div class="component-showcase">
+
           <div class="component-group active" id="buttons">
-            <div class="component-item">
-              <button class="demo-btn primary">Primary Button</button>
-              <p>Primary Button</p>
+            <div class="component-item" style="background-color: var(--secondary-color);">
+              <button class="demo-btn primary" style="color: var(--text-light);">Primary Button</button>
+              <p style="color: var(--text-dark);">Primary Button</p>
             </div>
-            <div class="component-item">
-              <button class="demo-btn secondary">Secondary Button</button>
-              <p>Secondary Button</p>
+            <div class="component-item" style=" border: 1px solid #dadada;">
+              <button class="demo-btn secondary" style="color: var(--text-dark);">Secondary Button</button>
+              <p style="color: var(--text-light);">Secondary Button</p>
             </div>
-            <div class="component-item">
-              <button class="demo-btn outline">Outline Button</button>
-              <p>Outline Button</p>
+            <div class="component-item" style=" border: 1px solid #dadada;">
+              <button class="demo-btn outline" style="color: #fff; border: 1px solid #11e1ea;">Outline Button</button>
+              <p style=" color: #dadada;">Outline Button</p>
             </div>
           </div>
-          <div class="component-group" id="cards">
+          <!-- <div class="component-group" id="cards">
             <div class="component-item">
               <div class="demo-card">
                 <div class="card-header">
@@ -106,14 +107,44 @@
               </div>
               <p>Horizontal Card</p>
             </div>
-          </div>
-          <div class="component-group" id="sliders">
+          </div> -->
+          <!-- <div class="component-group" id="sliders">
             <div class="component-item">
               <input type="range" class="demo-slider" min="0" max="100" value="50">
               <p>Basic Slider</p>
             </div>
-          </div>
-          <div class="component-group" id="forms">
+            <div class="component-item ">
+              <section class="timeline-9 py-16">
+                <div class="stepper flex items-center justify-center gap-8 relative max-w-4xl mx-auto px-4">
+
+                  <div class="step group" data-step="1">
+                    <div class="circle" style="color: var(--text-dark);">1</div>
+                    <p>Step One</p>
+                  </div>
+
+                  <div class="step group" data-step="2">
+                    <div class="circle" style="color: var(--text-dark);">2</div>
+                    <p>Step Two</p>
+                  </div>
+
+                  <div class="step group" data-step="3">
+                    <div class="circle" style="color: var(--text-dark);">3</div>
+                    <p>Step Three</p>
+                  </div>
+
+                  <div class="step group" data-step="4">
+                    <div class="circle" style="color: var(--text-dark);">4</div>
+                    <p>Step Four</p>
+                  </div>
+
+                  <div class="progress-line absolute top-5 left-8 right-8 h-1 bg-gray-300 z-0">
+                    <div class="progress-bar h-1 bg-blue-500 w-0 transition-all duration-500"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div> -->
+          <!-- <div class="component-group" id="forms">
             <div class="component-item">
               <div class="demo-input-group">
                 <label>Email</label>
@@ -121,8 +152,8 @@
               </div>
               <p>Input Field</p>
             </div>
-          </div>
-        </div> -->
+          </div> -->
+        </div>
         <div class="view-all">
           <a href="components.html" class="btn btn-primary">View All Components</a>
         </div>
