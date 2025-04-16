@@ -60,13 +60,16 @@ body {
 /* Sidebar */
 .components-sidebar {
   width: 280px;
+  min-width: 280px;
   background-color: transparent;
   /* border: 1px solid var(--border-color); */
   border-top: none;
   padding: 1.5rem;
   overflow-y: auto;
+  overflow-x: hidden;
   position: sticky;
   top: 70px;
+  left: 0px;
   /* Navbar height */
   height: calc(100vh - 70px);
   /* Subtract navbar height */
@@ -129,6 +132,9 @@ body {
 
 /* Component Code */
 .component-code {
+  overflow: scroll;
+  overflow-y: hidden;
+  max-width: 76vw;
   background-color: var(--secondary-color);
 }
 
@@ -161,7 +167,6 @@ body {
 .code-content {
   position: relative;
   overflow-y: scroll;
-  overflow-x: hidden;
   max-height: 30vw;
 }
 
@@ -342,6 +347,10 @@ code {
   height: 40vh;
 }
 
-.preview-container > * {
+.iframe-preview.accordian {
+  height: 40vh;
+}
+
+.preview-container>* {
   margin: 18px;
 }
