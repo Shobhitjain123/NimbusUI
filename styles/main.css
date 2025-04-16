@@ -192,12 +192,18 @@ img {
 
 }
 
+.components-preview .container {
+  border-radius: 1rem;
+  padding: 3vw 4vw;
+  background: #0b0b0b;
+}
 
 
 .navbar {
   /* border: 1px solid var(--secondary-color); */
   border-radius: 4rem;
-  box-shadow: inset 0 -1px 0px var(--secondary-color);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  /* box-shadow: inset 0 -1px 0px var(--secondary-color); */
   position: absolute;
   margin: 0 auto;
   position: sticky;
@@ -314,7 +320,7 @@ img {
 
 .hero-content h1 {
   color: var(--text-color);
-  font-size: 3.5rem;
+  font-size: 7rem;
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.025em;
@@ -366,7 +372,7 @@ img {
 
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
   color: var(--text-color);
   line-height: 1.6;
