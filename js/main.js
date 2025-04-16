@@ -1,27 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Mobile menu toggle
   const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
   const toggleBtn = document.getElementById('theme-toggle');
   const body = document.body;
   const transitionDiv = document.getElementById('theme-transition');
   const menu = document.querySelector(".components-sidebar");
-
-
+  const nav = document.querySelector(".nav-links");
+  const mobileMenu = document.querySelector(".mobile-menu");
+try{
   if (menuToggle) {
     menuToggle.addEventListener('click', function () {
-      // Toggle display block/none
-      if (menu.style.display === "block") {
-        menu.style.display = "none";
-      } else {
-        menu.style.display = "block";
-      }
-
-      // Toggle classes if needed
-      navLinks.classList.toggle('active');
-      menuToggle.classList.toggle('active');
+      mobileMenu.style.display = 'flex';
+      window.scrollTo(0, 0);
+      document.body.classList.add('no-scroll');
     });
+
+    const close = document.querySelector(".close");
+    close.addEventListener('click', () => {
+      mobileMenu.style.display = 'none';
+      document.body.classList.remove('no-scroll');
+    })
   }
+}catch(e){console.log(e)}
 
 
   toggleBtn.addEventListener('click', () => {

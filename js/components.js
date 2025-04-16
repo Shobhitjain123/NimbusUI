@@ -1,4 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+  const menu = document.querySelector(".components-sidebar");
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+
+  if (menuToggle) {
+    menuToggle.addEventListener('click', function () {
+      // Toggle display block/none
+
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+
+      // Toggle classes if needed
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    });
+  }
+
+
+
   // Initialize syntax highlighting
   hljs.highlightAll();
 
@@ -89,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Create an iframe for sandboxed rendering
         const iframe = document.createElement('iframe');
-        iframe.classList.add(`iframe-preview`,componentName)
+        iframe.classList.add(`iframe-preview`, componentName)
 
 
         // Reset content
