@@ -220,6 +220,7 @@ code {
   }
 
   .components-sidebar {
+    display: none;
     width: 100%;
     height: auto;
     position: static;
@@ -341,6 +342,6 @@ code {
   height: 40vh;
 }
 
-.preview-container:nth-child(n){
-  margin: 30px;
+.preview-container > * {
+  margin: 18px;
 }
