@@ -225,6 +225,8 @@ code {
   }
 
   .components-sidebar {
+    position: sticky;
+    top: 0;
     display: none;
     width: 100%;
     height: auto;
@@ -336,7 +338,10 @@ code {
 }
 
 .iframe-preview.navbar {
-  height: 40vh;
+  height: 11vh;
+  border-radius: 0;
+  overflow: hidden;
+  /* sc */
 }
 
 .iframe-preview.card {
